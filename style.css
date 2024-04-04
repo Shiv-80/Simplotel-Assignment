@@ -1,0 +1,125 @@
+
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+    background: linear-gradient(to left, #ffbbe7, #ffecb8);
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Style the navigation bar */
+.navbar {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    background-color: #ff7171;
+}
+
+/* Navigation bar links */
+.navbar a {
+    color: black;
+    text-decoration: none;
+    padding: 18px 28px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* On hover, change background color of links */
+.navbar a:hover {
+    background-color: #ffbbe7;
+    color: black;
+}
+
+.menu-bar {
+    max-height: 30px;
+    vertical-align: middle;
+}
+
+/* Content container */
+.content-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh; /* Set height for content container */
+}
+
+/* Text content styles */
+.text-content {
+    width: 50%;
+    padding-left: 50px;
+    text-align:left;
+}
+
+/* Heading styles */
+h1 {
+    font-size:40px;
+    font-weight: bold;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-bottom: 35px; /* Additional space below heading */
+    letter-spacing: 5px; /* Increase letter spacing */
+}
+
+/* Paragraph styles */
+p {
+    padding-left: 50PX;
+    padding-right: 50PX;
+    margin-bottom: 45px; /* Additional space below paragraph */
+}
+
+/* Button wrapper styles */
+.button-wrapper {
+    position: relative;
+    margin-left: 50px; /* Adjust margin as needed */
+}
+
+/* Button styles */
+.button {
+    padding: 11px 55px;
+    background-color: #ff7171;
+    color: white;
+    border: none;
+    border-radius: 0;
+    font-size: 11px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #ffbbe7;
+    color: black;
+}
+
+/* Image styles */
+.image {
+    width: 50%;
+    height: auto;
+}
+.burger {
+    width: 50%;
+    height: 90vh;
+}
+
+/* Media query for responsiveness */
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+    .navbar a {
+        margin: 0px;
+    }
+}
+.row {
+    display: flex;
+  }
+  
+  .column {
+    flex: 33.33%;
+    padding: 5px;
+  }

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sample Page</title>
+    <style>
+      body {
+        background: linear-gradient(to left, #ffbbe7, #ffecb8);
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh; /* Ensure the body covers the whole viewport height */
+      }
+
+      @media screen and (max-width: 768px) {
+        nav ul {
+          display: none;
+        }
+
+        .menu-icon {
+          display: block;
+          color: black;
+        }
+      }
+
+      .content {
+        display: flex;
+        flex-grow: 1;
+        align-items: center;
+        margin-left: 40px; /* Allow content area to grow to fill remaining space */
+      }
+
+      .image-area {
+        flex: 1; /* Occupy remaining space */
+        display: flex;
+        margin-top: 150px;
+        margin-bottom: 150px;
+        margin-left: 100px;
+
+      }
+
+      .image-area img {
+        margin-bottom: 20px;
+      }
+      .card {
+      background-color: rgba(215, 55, 71, 0.8); /* Button color */
+      padding: 20px;
+      color: rgb(1, 1, 1); /* Text color */
+    }
+
+    .card h3 {
+      padding-bottom: 20px
+    }
+
+    .card h1 {
+      margin-bottom: 20px;
+    }
+
+      .text-area {
+        flex: 1; /* Occupy remaining space */
+        display: flex;
+        flex-direction: column;
+        justify-content: center; /* Center vertically */
+        padding: 20px;
+      }
+
+      .text-area h1 {
+        margin-bottom: 20px;
+      }
+
+      .button {
+        background-color: rgba(215, 55, 71, 0.8);
+        color: rgb(0, 0, 0);
+        padding: 5px 10px; /* Adjust padding to make the button smaller */
+        border: none;
+        cursor: pointer;
+        text-decoration: none;
+        font-size: 14px; /* Adjust font size */
+      }
+
+      .button:hover {
+        background-color: rgba(215, 55, 71, 1);
+      }
+
+      /* New CSS to arrange images */
+      .image-area {
+        display: flex;
+        /* align-items: center; */
+      }
+      .column {
+        display: flex;
+        flex-direction: column;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="content">
+      <div class="image-area">
+        <div class="column">
+          <img
+            src=".\assets\image1.jpg"
+            alt="Image 1"
+            style="width: 170px; height: 150px"
+          />
+          <img
+            src=".\assets\image2.jpg"
+            alt="Image 2"
+            style="width: 170px; height: 150px"
+          />
+        </div>
+        <div class="column" style="margin-left: 20px;">
+          <img
+            src=".\assets\image3.jpg"
+            alt="Image 3"
+            style="width: 170px; height: 320px"
+          />
+        </div>
+      </div>
+      <div class="content">
+        <div class="card">
+          <h3>LOREM IPSUM</h3>
+          <h1>Lorem ipsum dolor sit <br> amet</h1>
+          <a href="#" class="button">click</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
